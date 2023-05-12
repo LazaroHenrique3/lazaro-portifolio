@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import LinkButton from "../LinkButton"
 
 export const AboutContainer = styled.section`
-    width: 90%;
+    width: 100%;
     min-height: 80vh;
     margin: 0 auto;
     display: flex;
@@ -13,8 +13,6 @@ export const AboutContainer = styled.section`
     gap: 40px;
     flex-wrap: wrap;
     margin-top: 60px;
-    
-    overflow-x: hidden;
 `
 
 export const ImageContainer = styled.div`

@@ -24,11 +24,11 @@ function App() {
 
   return (
     <ThemeProvider theme={themeDark}>
-       <Header/>
-       <Banner/>
-       <About/>
-       <Projects/>
-      <GlobalStyle/>
+      <Header/>
+       {/*<Banner/>*/} 
+       {/*<About/>*/}       
+{/*        <Projects/>
+ */}      <GlobalStyle/>
     </ThemeProvider>
   );
 }
