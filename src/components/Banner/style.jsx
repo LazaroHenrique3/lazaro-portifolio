@@ -2,7 +2,7 @@ import styled, { keyframes } from "styled-components";
 
 //Background
 import bgMatrix from '../../img/bgMatrix.gif'
-//import bgMatrixImg from '../../img/bgMatrixImg.jpg'
+import bgMatrixImg from '../../img/bgMatrixImg.jpg'
 
 //icons
 import { BsChevronDown } from "react-icons/bs";
@@ -32,6 +32,12 @@ export const BannerContainer = styled.section`
   background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%), url(${bgMatrix});
   background-size: cover;
   position: relative;
+
+  @media screen and (max-width: 768px) {
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%), url(${bgMatrixImg});
+  }
+
+
 `
 
 export const MainInformations = styled.div`

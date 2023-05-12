@@ -67,7 +67,7 @@ const About = () => {
 
             <DescriptionContainer data-aos="fade-left">
 
-                <Typing key={text} typingDelay={1000} className="typing-box" text={text} speed={10} eraseDelay={50000000} />
+                <Typing key={text} typingDelay={1000} className="typing-box" text={text} speed={50} eraseDelay={50000000} />
 
                 <div className="separator"></div>
 
