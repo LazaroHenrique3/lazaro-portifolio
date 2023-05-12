@@ -35,8 +35,7 @@ const Banner = () => {
 
             <DownContainer>
                 <span>
-                    Follow the white rabbit
-                    {/* <Typing text={'Follow the white rabbit.'} typingDelay={10} speed={100} eraseSpeed={50}/> */}
+                    <Typing text={'Follow the white rabbit.'} typingDelay={10} speed={100} eraseSpeed={50}/>
                 </span>
                 <a href="#about">
                     <ArrowDownIcon />
