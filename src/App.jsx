@@ -14,6 +14,7 @@ import { themeDark } from './styles/theme';
 import Header from './components/Header';
 import Banner from './components/Banner';
 import About from './components/About';
+import Projects from './components/Projects';
 
 function App() {
   useEffect(() => {
@@ -26,6 +27,7 @@ function App() {
        <Header/>
        <Banner/>
        <About/>
+       <Projects/>
       <GlobalStyle/>
     </ThemeProvider>
   );
