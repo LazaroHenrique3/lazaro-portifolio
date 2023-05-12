@@ -13,6 +13,7 @@ export const AboutContainer = styled.section`
     gap: 40px;
     flex-wrap: wrap;
     margin-top: 60px;
+    overflow-x: hidden;
 `
 
 export const ImageContainer = styled.div`

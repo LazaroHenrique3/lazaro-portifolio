@@ -46,6 +46,10 @@ export const MainInformations = styled.div`
 
     h1{
         font-size: 3em;
+
+        @media screen and (max-width: 400px) {
+          font-size: 2.5em;
+        }
     } 
 
     .container-buttons{
