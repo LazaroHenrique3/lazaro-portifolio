@@ -25,7 +25,6 @@ const animacao = keyframes`
 export const BannerContainer = styled.section`
   width: 100%;
   height: 90vh;
-  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,7 +34,8 @@ export const BannerContainer = styled.section`
 `
 
 export const MainInformations = styled.div`
-    padding: 10px;
+    padding: 20px;
+    margin: 10px;
 
     h1{
         font-size: 3em;
