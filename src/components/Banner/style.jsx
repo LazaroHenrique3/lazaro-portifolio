@@ -25,12 +25,12 @@ const animacao = keyframes`
 export const BannerContainer = styled.section`
   width: 100%;
   height: 90vh;
-  margin-top: 60px;
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-
-  background-size: cover;
+/*   background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%), url(${bgMatrix});
+ */  background-size: cover;
   position: relative;
 `
 
