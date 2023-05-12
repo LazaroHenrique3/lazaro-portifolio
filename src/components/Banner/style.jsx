@@ -29,7 +29,7 @@ export const BannerContainer = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%), url(${bgMatrix});
+
   background-size: cover;
   position: relative;
 `
