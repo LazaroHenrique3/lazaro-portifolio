@@ -2,10 +2,9 @@ import styled from 'styled-components';
 
 export default styled.select`
 
-    border: none;
     font-weight: bold;
-    border-radius: 6px;
-    padding: 6px 10px;
+    border-radius: 15px;
+    padding: 10px;
     outline: none;
     background-color: transparent;
     border: 2px solid ${(props) => props.theme.color_green};
