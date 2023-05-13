@@ -28,7 +28,7 @@ export const ImageContainer = styled.div`
 
 export const DescriptionContainer = styled.div`
     width: 100%;
-
+    
     .technologies-used{
         margin: 10px 0 15px 0;
         display: flex;
@@ -42,6 +42,11 @@ export const DescriptionContainer = styled.div`
     p{
         overflow-wrap: break-word;
         text-align: justify;
+    }
+
+    h3{
+        margin-top: 5px;
+        font-size: 15px;
     }
 `
 export const ProjectButtonContainer = styled.div`

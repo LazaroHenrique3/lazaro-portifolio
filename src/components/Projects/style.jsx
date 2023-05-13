@@ -21,5 +21,8 @@ export const SelectProject = styled(Select)`
 `
 
 export const ListProjectsContainer = styled.div`
-
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 `

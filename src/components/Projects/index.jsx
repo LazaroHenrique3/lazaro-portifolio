@@ -10,12 +10,19 @@ import {
 //Components
 import ProjectCard from "../ProjectCard"
 
+//Projects
+import { projectsReactNode } from "./projectsData"
+
 const Projects = () => {
 
   const [typeProjects, setTypeProjects] = useState('1')
+  const [projects, setProjects] = useState(projectsReactNode)
+
+  console.log(projects)
 
   return (
     <ProjectsContainer id="projects">
+
       <h1>Projetos</h1>
 
       <div className="select-container">
@@ -27,8 +34,11 @@ const Projects = () => {
       </div>
 
       <ListProjectsContainer>
-        <ProjectCard />
+        {projects.map((project) => (
+            <ProjectCard project={project} />
+        ))}
       </ListProjectsContainer>
+
     </ProjectsContainer>
   )
 }

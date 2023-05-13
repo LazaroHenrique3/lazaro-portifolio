@@ -1,51 +1,51 @@
 //Styles
-import { 
+import {
     ProjectCardContainer,
     ImageContainer,
     DescriptionContainer,
     ProjectButtonContainer,
     ProjectButton
- } from "./style"
-
-//Image
-import myProject from '../../img/projects/myProjects.PNG'
+} from "./style"
 
 //icons
 import { BsFillCloudArrowUpFill, BsGithub } from "react-icons/bs";
 
-const ProjectCard = () => {
-  return (
-    <ProjectCardContainer>
-        <ImageContainer>
-            <img src={myProject} alt="foto" />
-        </ImageContainer>
-        
-        <DescriptionContainer>
-            <h2>MyProjects</h2>
+const ProjectCard = ({ project }) => {
+    console.log(project)
+    return (
+        <ProjectCardContainer>
+            <ImageContainer>
+                <img src={project.imgSrc} alt={project.title} />
+            </ImageContainer>
 
-            <div className="technologies-used">
-                <BsGithub/>
-                <BsGithub/>
-            </div>
+            <DescriptionContainer>
+                <h2>{project.title}</h2>
 
-            <p>Gerenciador de projetos estilo TODO list, faz o 
-            gerenciamento automático de status do projeto de 
-            acordo com as tarefas para facilitar o acompanhamento 
-            do progresso.</p>
-        </DescriptionContainer>
+                <div className="technologies-used">
+                    {project.techsUsed.map((tech) => (
+                        tech
+                    ))}
+                </div>
 
-        <ProjectButtonContainer>
-            <ProjectButton>
-                <BsFillCloudArrowUpFill/> Ver Deploy
-            </ProjectButton>
+                <p>{project.description}</p>
 
-            <ProjectButton>
-                <BsGithub/> GitHub
-            </ProjectButton>
-        </ProjectButtonContainer>
+                <h3>Inspiração: {project.inspiration}</h3>
+            </DescriptionContainer>
 
-    </ProjectCardContainer>
-  )
+            <ProjectButtonContainer>
+                {project.isDeploy &&
+                    <ProjectButton href={project.deployLink} target="blank">
+                        <BsFillCloudArrowUpFill /> Ver Deploy
+                    </ProjectButton>
+                }
+
+                <ProjectButton href={project.gitHubLink} target="blank">
+                    <BsGithub /> GitHub
+                </ProjectButton>
+            </ProjectButtonContainer>
+
+        </ProjectCardContainer>
+    )
 }
 
 export default ProjectCard
