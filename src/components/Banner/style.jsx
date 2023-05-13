@@ -39,20 +39,31 @@ export const BannerContainer = styled.section`
 `
 
 export const MainInformations = styled.div`
-    padding: 20px;
-    margin: 10px;
+ 
     
     h1{
         font-size: 3em;
 
-        @media screen and (max-width: 400px) {
+        @media screen and (max-width: 500px) {
           font-size: 2em;
         }
 
-        @media screen and (max-width: 370px) {
-          font-size: 1.5em;
+        @media screen and (max-width: 400px) {
+          font-size: 1.3em;
         }
     } 
+
+    h2{
+      font-size: 2em;
+
+        @media screen and (max-width: 500px) {
+          font-size: 1.3em;
+        }
+
+        @media screen and (max-width: 400px) {
+          font-size: .8em;
+        }
+    }
 
     .container-buttons{
         margin-top: 20px;

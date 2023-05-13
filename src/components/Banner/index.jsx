@@ -18,9 +18,10 @@ const Banner = () => {
         <BannerContainer>
             <MainInformations>
                 <h2>Olá,</h2>
-                <h1>sou Lázaro Henrique, <br /> Desenvolvedor Full Stack</h1>
+                <h1>sou Lázaro Henrique, <br /> Dev Full Stack</h1>
                 <h2>Seja bem vindo(a).</h2>
 
+              
             </MainInformations>
 
             <DownContainer>
