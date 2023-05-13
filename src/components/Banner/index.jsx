@@ -21,7 +21,15 @@ const Banner = () => {
                 <h1>sou Lázaro Henrique, <br /> Dev Full Stack</h1>
                 <h2>Seja bem vindo(a).</h2>
 
-              
+                <div className="container-buttons">
+                    <SocialButton href="https://github.com/LazaroHenrique3" target="blank">
+                        <BsGithub /> GitHub
+                    </SocialButton>
+
+                    <SocialButton href="https://www.linkedin.com/in/lazaro-henrique/" target="blank">
+                        <BsLinkedin /> Linkedin
+                    </SocialButton>
+                </div>
             </MainInformations>
 
             <DownContainer>

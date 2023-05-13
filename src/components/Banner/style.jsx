@@ -74,7 +74,7 @@ export const MainInformations = styled.div`
         }
 
         :first-child{
-            margin-right: 15px;
+            margin-right: 10px;
         }
     }
 `
