@@ -32,23 +32,25 @@ export const BannerContainer = styled.section`
   background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%), url(${bgMatrix});
   background-size: cover;
   position: relative;
-
+  
   @media screen and (max-width: 768px) {
     background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%), url(${bgMatrixImg});
   }
-
-
 `
 
 export const MainInformations = styled.div`
     padding: 20px;
     margin: 10px;
-
+    
     h1{
         font-size: 3em;
 
         @media screen and (max-width: 400px) {
           font-size: 2em;
+        }
+
+        @media screen and (max-width: 370px) {
+          font-size: 1.5em;
         }
     } 
 

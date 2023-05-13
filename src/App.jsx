@@ -16,12 +16,6 @@ import Banner from './components/Banner';
 import About from './components/About';
 import Projects from './components/Projects';
 
-import styled from 'styled-components';
-
-const Teste = styled.div`
-  height: 10000px;
-  background-color: blue;
-`
 
 function App() {
   useEffect(() => {
@@ -32,11 +26,10 @@ function App() {
   return (
     <ThemeProvider theme={themeDark}>
       <Header/>
-      <Teste/>
-       {/*<Banner/>*/} 
-       {/*<About/>*/}       
-{/*        <Projects/>
- */}      <GlobalStyle/>
+       <Banner/>
+       {/*<About/> */}
+      <Projects/>
+      <GlobalStyle/>
     </ThemeProvider>
   );
 }
