@@ -27,7 +27,7 @@ function App() {
     <ThemeProvider theme={themeDark}>
       <Header/>
        <Banner/>
-       {/*<About/> */}
+       <About/>
       <Projects/>
       <GlobalStyle/>
     </ThemeProvider>

@@ -10,13 +10,14 @@ export const AboutContainer = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 40px;
     flex-wrap: wrap;
     margin-top: 60px;
+    padding: 5px;
 `
 
 export const ImageContainer = styled.div`
     width: 300px;
+    padding: 10px;
 
     img{
         border: 2px solid ;
@@ -41,6 +42,11 @@ export const CurricullumButton = styled(LinkButton)`
 `
 export const DescriptionContainer = styled.div`
     max-width: 500px;
+    padding: 10px;
+
+    @media screen and (max-width: 400px) {
+        max-width: 300px;
+    }
 
     .typing-box{
         width: auto;
@@ -48,6 +54,10 @@ export const DescriptionContainer = styled.div`
         font-size: 20px;
         text-align: justify;
         padding-bottom: 10px;
+
+        @media screen and (max-width: 500px) {
+          font-size: 18px;
+        }
     }
 
     .separator{
