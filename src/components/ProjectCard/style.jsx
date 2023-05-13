@@ -4,7 +4,7 @@ import styled from "styled-components";
 import LinkButton from "../LinkButton";
 
 export const ProjectCardContainer = styled.div`
-    width: 300px;
+    max-width: 360px;
     border: 2px solid ;
     border-radius: 10px;
     box-shadow: -1px -4px 70px -24px rgba(0,255,0,1);
