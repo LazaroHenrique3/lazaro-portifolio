@@ -5,7 +5,7 @@ import LinkButton from "../LinkButton"
 
 export const AboutContainer = styled.section`
     width: 100%;
-    min-height: 80vh;
+    min-height: 100vh;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -75,6 +75,14 @@ export const DescriptionContainer = styled.div`
 
         svg{
             margin: 5px;
+            transition: 0.4s;
+
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+
+        img{
             transition: 0.4s;
 
             &:hover{

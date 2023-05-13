@@ -2,8 +2,8 @@ import { ProjectsContainer } from "./style"
 
 const Projects = () => {
   return (
-    <ProjectsContainer>
-        olá, mundo
+    <ProjectsContainer id="projects">
+        <h1>Projetos</h1>
     </ProjectsContainer>
   )
 }

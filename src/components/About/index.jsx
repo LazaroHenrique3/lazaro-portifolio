@@ -65,7 +65,7 @@ const About = () => {
                 </CurricullumButton>
             </ImageContainer>
 
-            <DescriptionContainer>
+            <DescriptionContainer data-aos="fade-right">
 
                 <Typing key={text} typingDelay={1000} className="typing-box" text={text} speed={40} eraseDelay={50000000} />
 

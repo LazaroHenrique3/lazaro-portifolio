@@ -15,6 +15,7 @@ import Header from './components/Header';
 import Banner from './components/Banner';
 import About from './components/About';
 import Projects from './components/Projects';
+import Footer from './components/Footer/style';
 
 
 function App() {
@@ -28,7 +29,8 @@ function App() {
       <Header/>
        <Banner/>
        <About/>
-      <Projects/>
+       <Projects/>
+       <Footer/>
       <GlobalStyle/>
     </ThemeProvider>
   );
