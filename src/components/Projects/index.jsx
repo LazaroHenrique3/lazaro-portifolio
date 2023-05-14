@@ -44,7 +44,7 @@ const Projects = () => {
   useEffect(() => {
     const scrollListener = () => {
 
-      if (window.scrollY > 800) {
+      if (window.scrollY > 850) {
         setText(textProjcts)
       }
     }
