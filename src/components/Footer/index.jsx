@@ -12,6 +12,7 @@ export const FooterContainer = styled.footer`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 50px;
 
     .icons-container{
         margin-bottom: 20px;

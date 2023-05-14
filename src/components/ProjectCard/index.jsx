@@ -11,7 +11,7 @@ import {
 import { BsFillCloudArrowUpFill, BsGithub } from "react-icons/bs";
 
 const ProjectCard = ({ project }) => {
-    console.log(project)
+
     return (
         <ProjectCardContainer>
             <ImageContainer>

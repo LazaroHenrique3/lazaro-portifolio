@@ -14,6 +14,12 @@ export const ProjectsContainer = styled.section`
         font-size: 2em;
         margin-bottom: 20px;
     }
+
+    .typing-box{
+        max-width: 600px;
+        text-align: justify;
+        margin-bottom: 10px;
+    }
 `
 
 export const SelectProject = styled(Select)`
