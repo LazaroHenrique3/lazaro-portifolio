@@ -48,12 +48,13 @@ const Contact = () => {
             toast.success('Email enviado com sucesso!')
             reset()
         } catch (error) {
+            console.log(error)
             toast.error('Houve um erro, tente novamente mais tarde!')
         }
     }
 
     return (
-        <ContactContainer id="contact">
+        <ContactContainer id="contact" data-aos="fade-right">
             <h1>Contato</h1>
 
             <ContactForm onSubmit={onSubmit(handleSubmit)}> 
