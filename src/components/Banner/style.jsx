@@ -8,7 +8,7 @@ import bgMatrixImg from '../../img/bgMatrixImg.jpg'
 import { BsChevronDown } from "react-icons/bs";
 
 //Button
-import LinkButton from "../LinkButton";
+import {LinkButton} from "../Buttons"
 
 //Keyframe
 const animacao = keyframes`

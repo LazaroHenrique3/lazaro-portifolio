@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
 
-export default styled.a`
+const buttonCSS = css`
   background: transparent;
   color: ${(props) => props.theme.color_green};
   border: 2px solid ${(props) => props.theme.color_green};
@@ -8,6 +8,7 @@ export default styled.a`
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  font-family: 'Orbitron', sans-serif;
   padding: 10px;
   border-radius: 15px;
   font-weight: bold;
@@ -20,4 +21,12 @@ export default styled.a`
   &:hover {
     background: ${(props) => props.theme.color_green_dark};
   }
+`
+
+export const LinkButton = styled.a`
+  ${buttonCSS}
 `;
+
+export const Button = styled.button`
+  ${buttonCSS}
+`

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 //Button
-import LinkButton from "../LinkButton";
+import {LinkButton} from "../Buttons"
 
 export const ProjectCardContainer = styled.div`
     max-width: 360px;

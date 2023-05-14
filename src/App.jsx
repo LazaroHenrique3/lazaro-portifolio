@@ -15,7 +15,8 @@ import Header from './components/Header';
 import Banner from './components/Banner';
 import About from './components/About';
 import Projects from './components/Projects';
-import Footer from './components/Footer/style';
+import Footer from './components/Footer';
+import Contact from './components/Contact';
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
        <Banner/>
        <About/>
        <Projects/>
+       <Contact/>
        <Footer/>
       <GlobalStyle/>
     </ThemeProvider>

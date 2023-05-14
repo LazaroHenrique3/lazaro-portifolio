@@ -1,46 +1,26 @@
-import styled, {css} from "styled-components";
+import { 
+    FooterContainer, 
+    GitHubIcon, 
+    LinkedinIcon, 
+    InstagramIcon } from "./style"
 
-//Icons
-import { BsGithub, BsLinkedin, BsInstagram } from "react-icons/bs";
+const Footer = () => {
+  return (
+    <FooterContainer>
+        <div className="icons-container">
+            <a href="https://github.com/LazaroHenrique3" target="blank">
+                <GitHubIcon/>
+            </a>
+            <a href="https://www.linkedin.com/in/lazaro-henrique/" target="blank">
+                <LinkedinIcon/>
+            </a>
+            <a href="https://www.instagram.com/lazaro_fernandes_art/" target="blank">
+                <InstagramIcon/>
+            </a>
+        </div>
+        <p>&copy; Lázaro Henrique</p>
+    </FooterContainer>
+  )
+}
 
-export const FooterContainer = styled.footer`
-    color: ${(props) => props.theme.color_green};
-    background-color: ${(props) => props.theme.color_dark_one};
-    width: 100%;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
-
-    .icons-container{
-        margin-bottom: 20px;
-        display: flex;
-        gap: 20px;
-    }
-`
-
-const iconsConfig = css`
-    color: ${(props) => props.theme.color_green};
-    font-size: 25px;
-    transition: 0.4s;
-    text-decoration: none;
-
-    &:hover{
-        transform: scale(1.1);
-    }
-`
-
-export const GitHubIcon = styled(BsGithub)`
-    ${iconsConfig}
-`
-
-export const LinkedinIcon = styled(BsLinkedin)`
-    ${iconsConfig}
-
-`
-
-export const InstagramIcon = styled(BsInstagram)`
-    ${iconsConfig}
-`
+export default Footer

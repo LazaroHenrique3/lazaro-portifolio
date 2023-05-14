@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 //Button
-import LinkButton from "../LinkButton"
+import {LinkButton} from "../Buttons"
 
 export const AboutContainer = styled.section`
     width: 100%;
