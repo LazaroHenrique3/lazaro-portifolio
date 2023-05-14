@@ -19,6 +19,7 @@ export const ProjectsContainer = styled.section`
         max-width: 600px;
         text-align: justify;
         margin-bottom: 10px;
+        padding: 10px;
     }
 `
 
