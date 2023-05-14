@@ -12,6 +12,14 @@ import { yupResolver } from '@hookform/resolvers/yup';
 //yup
 import * as Yup from 'yup';
 
+//Toast
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+//EmailJS
+import emailJs from '@emailjs/browser'
+
+
 const schemaEmailSubmit = Yup.object({
     name: Yup.string().required("Campo obrigatório"),
     email: Yup.string().email("Email inválido!").required("Campo obrigatório!"),
@@ -27,9 +35,21 @@ const Contact = () => {
         formState: { errors },
     } = useForm({ resolver: yupResolver(schemaEmailSubmit) });
 
-    const handleSubmit = (data) => {
-        console.log(data)
-        reset()
+     const handleSubmit = async (data) => {
+
+        const templateParams = {
+            from_name: data.name,
+            message: data.message,
+            email: data.email
+        }
+
+        try {
+            const response = await emailJs.send(process.env.REACT_APP_EMAIL_SERVICE_ID, process.env.REACT_APP_EMAIL_TEMPLATE_ID, templateParams, process.env.REACT_APP_EMAIL_PUBLIC_KEY)
+            toast.success('Email enviado com sucesso!')
+            reset()
+        } catch (error) {
+            toast.error('Houve um erro, tente novamente mais tarde!')
+        }
     }
 
     return (

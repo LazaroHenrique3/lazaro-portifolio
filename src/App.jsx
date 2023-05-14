@@ -18,6 +18,10 @@ import Projects from './components/Projects';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
 
+//Importando o Toasts
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 function App() {
   useEffect(() => {
@@ -33,6 +37,7 @@ function App() {
        <Projects/>
        <Contact/>
        <Footer/>
+       <ToastContainer autoClose={5000} position={toast.POSITION.BOTTOM_LEFT} />
       <GlobalStyle/>
     </ThemeProvider>
   );
