@@ -11,14 +11,24 @@ import {
 import ProjectCard from "../ProjectCard"
 
 //Projects
-import { projectsReactNode } from "./projectsData"
+import { projectsReactNode, projectsReact, projectsPHP } from "./projectsData"
 
 const Projects = () => {
 
   const [typeProjects, setTypeProjects] = useState('1')
   const [projects, setProjects] = useState(projectsReactNode)
 
-  console.log(projects)
+  const handleProjects = (valueProject) => {
+    setTypeProjects(valueProject)
+
+    if(valueProject == '1'){
+      setProjects(projectsReactNode)
+    } else if(valueProject == '2'){
+      setProjects(projectsReact)
+    }else{
+      setProjects(projectsPHP)
+    }
+  }
 
   return (
     <ProjectsContainer id="projects">
@@ -26,7 +36,7 @@ const Projects = () => {
       <h1>Projetos</h1>
 
       <div className="select-container">
-        <SelectProject defaultValue={'1'} onChange={(e) => setTypeProjects(e.target.value)}>
+        <SelectProject defaultValue={'1'} onChange={(e) => handleProjects(e.target.value)}>
           <option value='1'>React + Node</option>
           <option value="2">React</option>
           <option value="3">PHP</option>
