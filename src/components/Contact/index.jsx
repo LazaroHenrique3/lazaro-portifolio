@@ -48,7 +48,6 @@ const Contact = () => {
             toast.success('Email enviado com sucesso!')
             reset()
         } catch (error) {
-            console.log(error)
             toast.error('Houve um erro, tente novamente mais tarde!')
         }
     }
