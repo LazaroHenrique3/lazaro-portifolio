@@ -1,8 +1,8 @@
 //images Project NODE+REACT
+import LazaroFernandesArt from '../../../img/projects/projects-node-react/LazaroFernandesArt.PNG'
 import myProjects from '../../../img/projects/projects-node-react/myProjects.PNG'
 import Costs from '../../../img/projects/projects-node-react/Costs.PNG'
 import GitHub from '../../../img/projects/projects-node-react/GitHub.PNG'
-import Cruder from '../../../img/projects/projects-node-react/Cruder.PNG'
 
 //images Project REACT
 import NetflixClone from '../../../img/projects/projects-react/NetflixClone.PNG'
@@ -18,7 +18,12 @@ import ListaTarefas from '../../../img/projects/projects-php/ListaTarefas.png'
 
 
 //Icons
-import { DiMysql, DiMongodb } from "react-icons/di";
+import { 
+    DiMysql, 
+    DiMongodb,     
+    DiPostgresql,
+} from "react-icons/di";
+
 import {
     FaHtml5,
     FaCss3Alt,
@@ -30,10 +35,10 @@ import {
 } from "react-icons/fa";
 
 export const projectsReactNode = [
+    {title: 'Lázaro Fernandes Art', imgSrc: LazaroFernandesArt, techsUsed: [<FaReact/>, <FaNodeJs/>, <DiPostgresql/>], description: 'E-commerce fullstack desenvolvido para meu TCC. Projeto especializado na comercialização de obras de arte, com foco principal em pinturas em telas.', isDeploy: false, deployLink: '', gitHubLink: 'https://github.com/LazaroHenrique3/lazaro-fernandes-art-ecommerce', inspiration: 'Autoral.'},
     {title: 'MyProjects', imgSrc: myProjects, techsUsed: [<FaReact/>, <FaNodeJs/>, <DiMysql/>], description: 'Gerenciador de projetos estilo TODO list, faz o gerenciamento automático de status do projeto de acordo com as tarefas para facilitar o acompanhamento do progresso.', isDeploy: true, deployLink: 'https://myprojects-frontend-react.vercel.app', gitHubLink: 'https://github.com/LazaroHenrique3/myprojects-frontend-react', inspiration: 'Autoral.'},
     {title: 'Costs', imgSrc: Costs, techsUsed: [<FaReact/>, <FaNodeJs/>, <DiMongodb/>], description: 'Gerenciador financeiro de projetos, faz o gerenciamento automático dos custos, evitando ultrapassar o orçamento máximo estipulado para o projeto.', isDeploy: true, deployLink: 'https://costs-frontend-react.vercel.app', gitHubLink: 'https://github.com/LazaroHenrique3/costs-frontend-react', inspiration: 'Hora de Codar/Autoral.'},
     {title: 'SysRepo', imgSrc: GitHub, techsUsed: [<FaReact/>, <FaNodeJs/>, <DiMongodb/>], description: 'Gerenciador de repositórios do GitHub com validação de login, essa aplicação permite que você salve repositórios de seu interesse por meio da URL.', isDeploy: true, deployLink: 'https://gerenciador-github-frontend-react.vercel.app', gitHubLink: 'https://github.com/LazaroHenrique3/gerenciador-github-frontend-react', inspiration: 'Dev Samurai.'},
-    {title: 'CRUder', imgSrc: Cruder, techsUsed: [<FaReact/>, <FaNodeJs/>, <DiMongodb/>], description: 'Reúne as operações básicas de um CRUD, sendo assim permite o usuário [Criar, Ler, Deletar e Atualizar] posts. Se assemelha a um mini blog bem primitivo.', isDeploy: true, deployLink: 'https://app-posts-react-theta.vercel.app', gitHubLink: 'https://github.com/LazaroHenrique3/cruder-frontend-react', inspiration: 'Além do Código.'}
 ]
 
 export const projectsReact = [
