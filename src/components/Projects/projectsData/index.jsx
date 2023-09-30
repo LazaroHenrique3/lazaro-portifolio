@@ -22,6 +22,7 @@ import {
     DiMysql, 
     DiMongodb,     
     DiPostgresql,
+    DiSqllite
 } from "react-icons/di";
 
 import {
@@ -35,7 +36,7 @@ import {
 } from "react-icons/fa";
 
 export const projectsReactNode = [
-    {title: 'Lázaro Fernandes Art', imgSrc: LazaroFernandesArt, techsUsed: [<FaReact/>, <FaNodeJs/>, <DiPostgresql/>], description: 'E-commerce fullstack desenvolvido para meu TCC. Projeto especializado na comercialização de obras de arte, com foco principal em pinturas em telas.', isDeploy: false, deployLink: '', gitHubLink: 'https://github.com/LazaroHenrique3/lazaro-fernandes-art-ecommerce', inspiration: 'Autoral.'},
+    {title: 'Lázaro Fernandes Art', imgSrc: LazaroFernandesArt, techsUsed: [<FaReact/>, <FaNodeJs/>, <DiPostgresql/>,<DiSqllite/>], description: 'E-commerce fullstack desenvolvido para meu TCC. Projeto especializado na comercialização de obras de arte, com foco principal em pinturas em telas.', isDeploy: false, deployLink: '', gitHubLink: 'https://github.com/LazaroHenrique3/lazaro-fernandes-art-ecommerce', inspiration: 'Autoral.'},
     {title: 'MyProjects', imgSrc: myProjects, techsUsed: [<FaReact/>, <FaNodeJs/>, <DiMysql/>], description: 'Gerenciador de projetos estilo TODO list, faz o gerenciamento automático de status do projeto de acordo com as tarefas para facilitar o acompanhamento do progresso.', isDeploy: true, deployLink: 'https://myprojects-frontend-react.vercel.app', gitHubLink: 'https://github.com/LazaroHenrique3/myprojects-frontend-react', inspiration: 'Autoral.'},
     {title: 'Costs', imgSrc: Costs, techsUsed: [<FaReact/>, <FaNodeJs/>, <DiMongodb/>], description: 'Gerenciador financeiro de projetos, faz o gerenciamento automático dos custos, evitando ultrapassar o orçamento máximo estipulado para o projeto.', isDeploy: true, deployLink: 'https://costs-frontend-react.vercel.app', gitHubLink: 'https://github.com/LazaroHenrique3/costs-frontend-react', inspiration: 'Hora de Codar/Autoral.'},
     {title: 'SysRepo', imgSrc: GitHub, techsUsed: [<FaReact/>, <FaNodeJs/>, <DiMongodb/>], description: 'Gerenciador de repositórios do GitHub com validação de login, essa aplicação permite que você salve repositórios de seu interesse por meio da URL.', isDeploy: true, deployLink: 'https://gerenciador-github-frontend-react.vercel.app', gitHubLink: 'https://github.com/LazaroHenrique3/gerenciador-github-frontend-react', inspiration: 'Dev Samurai.'},
